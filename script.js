@@ -11,6 +11,10 @@
 
 // showContent();
 
+
+element = document.getElementById("menu");
+element.classList.remove('open');
+
 function showContent() {
     showElement = document.getElementById("header-menu");
     element = document.getElementById("menu");
@@ -29,7 +33,6 @@ function showContent() {
         // showElement.style.display='none';
     }
 }
-
 showContent();
 
 // const menuButton = document.querySelector('.menu-button');
@@ -70,7 +73,6 @@ function showContent1() {
     }
 }
 
-showContent1();
 
 
 
@@ -97,11 +99,13 @@ showContent2();
 
 
 window.addEventListener("scroll", function(event) {
-    var scroll = this.scrollY;
-    var photo = document.getElementById("photo-BW");
-    var header = document.getElementById("header");
+    let scroll = this.scrollY;
+    let header = document.getElementById("header");
+
     element = document.getElementById("square");
     showElement = document.getElementById("phrase");
+    
+    showElement2 = document.getElementById('second-image');
     check1 = document.getElementById("toggle1");
     check2 = document.getElementById("toggle2");
 
@@ -110,17 +114,18 @@ window.addEventListener("scroll", function(event) {
 
     if(scroll >= 700) {
         document.body.style.background = "rgb(202, 202, 202)";
-        photo.style.top = "-1000px";
         header.style.backgroundColor = "black";
         element.classList.add('open');
         showElement.classList.add('open');
+        showElement2.classList.add('open')
         check2.checked = true;
     } else {
         document.body.style.background = "black";
-        photo.style.top = "0px";
-        header.style.backgroundColor = " #000000bb";
+
+        header.style.backgroundColor = " #000000";
         element.classList.remove('open');
         showElement.classList.remove('open');
+        showElement2.classList.remove('open')
         check2.checked = false;
     }
 
@@ -133,7 +138,7 @@ window.addEventListener("scroll", function(event) {
         document.body.style.background = "black";
         element1.classList.add('open');
         showElement1.classList.add('open');
-        header.style.backgroundColor = " #000000bb";
+        header.style.backgroundColor = " #000000";
         check1.checked = true;
     }
     else {
