@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    
+    <link rel="stylesheet" href="css/unicons.css">
     <title>Andrés Soler | FrontEnd Developer</title>
 </head>
 <body class="body">
@@ -38,7 +38,7 @@
                         <li class="header__nav-li"><a href="">Home</a></li>
                         <li class="header__nav-li"><a href="#content-square">About</a></li>
                         <li class="header__nav-li"><a href="#work-section">Work</a></li>
-                        <li class="header__nav-li"><a href="#contact">Contact</a></li>
+                        <li class="header__nav-li"><a href="#contact">CV</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,34 +46,40 @@
             
         </header>
 
-        <h1 class="animated animated-text">
+        <!-- <h1 class="animated animated-text">
             <span class="mr-2">Hello, I'm</span>
                 <div class="animated-info">
                     <span class="animated-item">Andres Soler</span>
                     <span class="animated-item">Backend Developer</span>
                     <span class="animated-item">Data Engineer</span>
                 </div>
-        </h1>
+        </h1> -->
 
 
         <section class="description">
-            <div class="phrase" id="phrase">
-            <h2 class="description-animate animated animated-text">Hey my name is 
-                <span class="name"> Andrés </span> <span class="name-surname"> Soler</span>. 
-                <br>
-                I am a 
-                <div class="animated-info">             
-                    <span class="animated-item">Backend Developer</span>
-                    <span class="animated-item">Data Engineer</span>
-                    <span class="animated-item">Dreamer</span>
+            <div class="phrase open" id="header-phrase">
+                <div class="description-left">
+                    <h1 class="description-animate animated animated-text">Hey my name is 
+                        <span class="name"> Andrés </span> <span class="name-surname"> Soler</span>. 
+                        <br>
+                        I am a 
+                        <div class="animated-info">             
+                            <span class="animated-item">Backend Developer</span>
+                            <span class="animated-item">Data Engineer</span>
+                            <span class="animated-item">Dreamer</span>
+                        </div>
+                        <br>
+                        I hope you enjoy my website!
+                    </h1>
+                    <img src="images/undraw/arrow-down.svg" alt="" class="arrow-down">
                 </div>
-                <br>
-                I hope you enjoy my website!
-            </h2>
+
+
             </div>
-                <div class="about-image svg">
-                    <img src="images/undraw/undraw_startup_life_re_8ow9_1.svg" class="img-fluid" alt="svg image">
-                </div>
+
+            <div class="about-image svg">
+                <img src="images/undraw/undraw_startup_life_re_8ow9_1.svg" class="img-fluid" alt="svg image">
+            </div>
 
         </section>
 
@@ -97,10 +103,25 @@
                     <img src="images/undraw/undraw_product_teardown_re_m1pc.svg" class="img-fluid" alt="svg image">
                 </div>
 
-                <div class="phrase" id="phrase">
-                    <p class="phrase-p">Hungry for new challenges and development experiences, I actually work in the Business Intelligence department of my company, connecting and sharing data in a way that everyone can understand.</p>
+                <div class="description-right">
+                    <div class="phrase" id="description-phrase">
+                        <h1 class="desc-title">Description:</h1>
+                        <p class="phrase-p" id='phrase-p'>
+                            Hungry for new challenges and development experiences, 
+                            I actually work in the Business Intelligence department of my company, 
+                            connecting and sharing data in a way that everyone can understand.
+                            <br><br>
+                            I use PHP as my main programming language, 
+                            but I also have knowledge of Javascript, Node.js, Python, Django, Golang
+                             and Frontend technologies like React.js, Bootstramp, Sass.
+                             <br><br>
+                            I have experience in ETL, Big Data, MySQL, Scrum, MVC, POO, Git, ElasticSearch, MongoDb, PostgreSQL, Azure.
+                            <br><br>
+                            I wake up every day thinking of programming as a life focus.
+                        </p>
+                    </div>
+                    <img src="images/undraw/arrow-down-purple.svg" alt="" class="arrow-down__appear" id="arrow-appear">
                 </div>
-     
             </section>
         </section>
       
@@ -112,12 +133,11 @@
 
 
             <div class="work-menu" id="work-menu">
+                <h1 class="projects-tag">Projects:</h1>
                 <ul class="work-menu__list" id="work-menu__list">
-                    <li><a href="">Personal Portfolio</a></li>
-                    <li><a href="https://andsoler11.github.io/copiaInstagramCss/">Instagram Layout</a></li>
-                    <li><a href="https://andsoler11.github.io/platziVideo/">Platzi Video</a></li>
-
-
+                    <li><a href="https://andsoler11.github.io/Portafolio/">Personal Portfolio</a></li>
+                    <li><a href="https://devsocialmedia-test.herokuapp.com/">Dev social Media - Python Django</a></li>
+                    <li><a href="https://nodeshop-app.herokuapp.com/">Online shop - Backend Node.js</a></li>
                 </ul>
             </div>
 
@@ -148,15 +168,22 @@
 
 
         <section class="contact" id="contact">
-            <p>Contact: </p>
-            <a href="https://www.facebook.com/andres.soler.129/"><img src="./assets/facebook_icon-icons.com_66092.svg" alt="Facebook icon" class="facebook"></a>
-            <a href="https://github.com/andsoler11"><img src="./assets/Github_icon-icons.com_66788.svg" alt="Github icon"></a>
-            <a href="https://www.linkedin.com/in/andr%C3%A9s-soler-73b0441b9/"><img src="./assets/iconfinder-social-media-applications-14linkedin-4102586_113786.svg" alt="linkedin icon"></a>
+            <div class="resume-download">
+                <a href="https://drive.google.com/drive/folders/1AXPznAbkSgxwRRGkxutKhBgQvKJ4aUql" class="resume-download__link"><img src="images/undraw/download-alt.svg" alt=""><p>Download Resume</p> </a>
+            </div>
+            
         </section>
 
 
         <footer class="footer">
-            <h5>thank you 😁</h5>
+            <div class="contact-phrase">
+                <h1>Contact</h1>
+            </div>
+            <div class="contact-icons">   
+                <a href="https://www.facebook.com/andres.soler.129/"><img src="./assets/facebook_icon-icons.com_66092.svg" alt="Facebook icon" class="facebook"></a>
+                <a href="https://github.com/andsoler11"><img src="./assets/Github_icon-icons.com_66788.svg" alt="Github icon"></a>
+                <a href="https://www.linkedin.com/in/andres-soler11/"><img src="./assets/iconfinder-social-media-applications-14linkedin-4102586_113786.svg" alt="linkedin icon"></a>
+            </div>
         </footer>
     </main>
 

@@ -1,16 +1,3 @@
-// function showContent() {
-//     element = document.getElementById("menu");
-//     check = document.getElementById("toggle");
-//     if (check.checked) {
-//         element.style.display='none';
-//     }
-//     else {
-//         element.style.display='flex';
-//     }
-// }
-
-// showContent();
-
 
 element = document.getElementById("menu");
 element.classList.remove('open');
@@ -35,17 +22,7 @@ function showContent() {
 }
 showContent();
 
-// const menuButton = document.querySelector('.menu-button');
-// let menuOpen = false;
-// menuButton.addEventListener('click', () => {
-//     if(!menuOpen) {
-//         menuButton.classList.add('open');
-//         menuOpen = true;
-//     } else {
-//         menuButton.classList.remove('open');
-//         menuOpen = false;
-//     }
-// });
+
 
 
 
@@ -77,21 +54,16 @@ function showContent1() {
 
 
 function showContent2() {
-    showElement = document.getElementById("phrase");
     element = document.getElementById("square");
     check = document.getElementById("toggle2");
     let menuOpen = false;
     if (check.checked) {
         element.classList.add('open');
         menuOpen = true
-        showElement.classList.add('open');
-        // showElement.style.display='flex';
     }
     else {
         element.classList.remove('open');
         menuOpen = false;
-        showElement.classList.remove('open');
-        // showElement.style.display='none';
     }
 }
 
@@ -102,33 +74,41 @@ window.addEventListener("scroll", function(event) {
     let scroll = this.scrollY;
     let header = document.getElementById("header");
 
-    element = document.getElementById("square");
-    showElement = document.getElementById("phrase");
-    
-    showElement2 = document.getElementById('second-image');
-    check1 = document.getElementById("toggle1");
-    check2 = document.getElementById("toggle2");
+    let element = document.getElementById("square");
 
-    // console.log(scroll);
+    let headerPhrase = document.getElementById('header-phrase');
+    let descriptionPhrase = document.getElementById("description-phrase");
+    let arrow = document.getElementById('arrow-appear')
+
+    let secondImage = document.getElementById('second-image');
+    let check1 = document.getElementById("toggle1");
+    let check2 = document.getElementById("toggle2");
+
+
 
 
     if(scroll >= 700) {
         document.body.style.background = "rgb(202, 202, 202)";
         header.style.backgroundColor = "black";
         element.classList.add('open');
-        showElement.classList.add('open');
-        showElement2.classList.add('open')
+        arrow.classList.add('open');
+        
+        descriptionPhrase.classList.add('open');
+        secondImage.classList.add('open')
         check2.checked = true;
-    } else {
-        document.body.style.background = "black";
+    } 
 
+    if (scroll <= 200) {
+        document.body.style.background = "black";
         header.style.backgroundColor = " #000000";
         element.classList.remove('open');
-        showElement.classList.remove('open');
-        showElement2.classList.remove('open')
+        arrow.classList.remove('open');
+
+        headerPhrase.classList.add('open');
+        descriptionPhrase.classList.remove('open');
+        secondImage.classList.remove('open')
         check2.checked = false;
     }
-
 
 
     showElement1 = document.getElementById("work-menu");
