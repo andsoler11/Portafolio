@@ -26,7 +26,7 @@ html {
     position: fixed;
     z-index: 2;
     background-color: #000000;
-}
+}   
 
 .header__logo {
     z-index: 3;
@@ -211,7 +211,7 @@ html {
     z-index: 0;
     padding: 0px 100px 0px 100px;
     justify-content: center;
-    color: rgb(202, 202, 202);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -422,7 +422,7 @@ html {
 .phrase-p {
     /* font-size: 40px; */
     position: relative;
-    font-weight: bold;
+    font-weight: 100;
     display: inline;
     z-index: 0;
     transition: 2s;
@@ -525,7 +525,7 @@ html {
     gap: 50px;
     transition: all 1s ease-in-out;
     position: relative;
-    left: -600px;
+    left: -1500px;
 }
 
 

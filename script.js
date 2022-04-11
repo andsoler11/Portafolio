@@ -88,7 +88,7 @@ window.addEventListener("scroll", function(event) {
 
 
     if(scroll >= 700) {
-        document.body.style.background = "rgb(202, 202, 202)";
+        document.body.style.background = "rgb(233, 233, 233)";
         header.style.backgroundColor = "black";
         element.classList.add('open');
         arrow.classList.add('open');
